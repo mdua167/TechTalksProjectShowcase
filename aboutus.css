@@ -1,0 +1,224 @@
+body {
+  text-align: center;
+  background-color:aliceblue;
+}
+ 
+img {
+  object-fit: cover;
+  margin: 10px;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+header {
+  height: 100px;
+  background-color: rgb(141, 195, 243);
+  
+  /* background-color: #AC7F53;  */
+  /* background-color: #AEF3E7; JUST TRYING SMTH OUT I MADE IT BROWNISH FOR NOW cuz i thought the teel was looking a litle tacky but we can talk about it tomorrow  */
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+.logo{
+  width: 30%;
+  float: left;
+  line-height: 100px;
+}
+
+.logo a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Helvetica';
+  color: #392F5A;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px #E4C1F9
+}
+
+.logo a:hover {
+text-shadow: 2px 2px #392F5A;
+color: #E4C1F9;
+}
+
+nav {
+ float:right;
+ line-height: 100px; 
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Helvetica';
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 10px;
+  color: #392F5A;
+  text-shadow: 2px 2px #E4C1F9;
+  padding: 20px;
+}
+
+.dropbtn {
+  font-size: 20px;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 4px;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #AEF3E7;
+  background-color: #392F5A;
+  text-shadow: 2px 2px #E4C1F9;
+  }
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  }
+
+nav a:hover  {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  }
+
+.active {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  padding: 20px;
+}
+
+
+h2
+{
+  text-align: center; 
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px; 
+}
+
+.box
+{
+  margin: 70px;
+  width: 50%;
+  height: 330px; 
+  border: 7px solid black;
+  padding:15px;
+  background-color: aliceblue;
+  box-shadow: 10px 10px rgb(66, 51, 117)
+  
+  /*border: 10px solid powderblue;
+  padding: 20px; */
+}
+
+img
+{
+  clear: right; 
+  transition: transform .2s;  /* This is for smooth transition */
+  margin: 10px; 
+  /* filter: grayscale(100%); can use this to make all images grey
+  */
+}
+img:hover
+{
+  transform: scale(1.1); /* 1.1 means that the image will increase from appearing as 100 percent to 110 percent*/
+}
+
+
+.left
+{
+  display: flex; 
+  justify-content: flex-start; 
+}
+.right
+{
+  display: flex; 
+  justify-content: flex-end; 
+}
+.images
+{
+  background-color: rgb(141, 195, 243);
+  /* height: 10; 
+  width: 10;  */
+  /* background-color: black;  */
+  /* background-color: #E7AEF3;  */
+  /* background-color: #E4C1F9; */
+  /* background-color: #AEF3E7;  */
+}
+.i{
+  width: 400px;
+  height: auto;
+  
+}
+
+
+.bio {
+  font-size: 22px; 
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 90px; 
+  padding-left: 10px; 
+  text-align: center; 
+  
+}
+
+.aboutusborder {
+  position: relative;
+  top: 40px;
+}
+
+.windowtext {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  top: 35%;
+  left: 42%;
+  font-family: Helvetica;
+}
+.windowtexttwo {
+  position: absolute;
+  align-items: center;
+  text-align: center;
+  top: 49%;
+  left: 41%;
+}
+.about-us {
+  font-family: Helvetica;
+  padding: 2px;
+  text-align: center;
+  align-items: center;
+  color: black;
+  border-radius: 56%;
+  background-color: #F3E7AE;
+  /* background-color: #E4C1F9; */
+  font-size: 30px; 
+}
+
+.windoww {
+width:500px; 
+height: 400px;
+object-fit: cover;
+}

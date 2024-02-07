@@ -1,0 +1,257 @@
+body {
+  text-align: center;
+  background-color:aliceblue;
+}
+ 
+img {
+  width: 300px;
+  object-fit: cover;
+  margin: 10px;
+}
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+header {
+  height: 100px;
+  background-color: rgb(141, 195, 243);
+  
+  /* background-color: #AC7F53;  */
+  /* background-color: #AEF3E7; JUST TRYING SMTH OUT I MADE IT BROWNISH FOR NOW cuz i thought the teel was looking a litle tacky but we can talk about it tomorrow  */
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+.logo{
+  width: 30%;
+  float: left;
+  line-height: 100px;
+}
+
+.logo a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Helvetica';
+  color: #392F5A;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px #E4C1F9
+}
+
+.logo a:hover {
+text-shadow: 2px 2px #392F5A;
+color: #E4C1F9;
+}
+
+nav {
+ float:right;
+ line-height: 100px; 
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Helvetica';
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 10px;
+  color: #392F5A;
+  text-shadow: 2px 2px #E4C1F9;
+  padding: 20px;
+}
+
+.dropbtn {
+  font-size: 20px;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 4px;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #AEF3E7;
+  background-color: #392F5A;
+  text-shadow: 2px 2px #E4C1F9;
+  }
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  }
+
+nav a:hover  {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  }
+
+.active {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  padding: 20px;
+}
+/*the .active for "Learn" is weird because I put the class in a span since Learn already had another class in it (see lines 18-19 in the 3 STEM subject HTMLs)*/
+
+.tech-talk-header {
+  font-family: 'Helvetica';
+  text-align: center;
+  font-size: 30px;
+  color: #392F5A;
+  text-shadow: 2px 2px #E4C1F9;
+}
+
+.header-one {
+  background-image: url('stem.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-position: center bottom;
+  background-size: cover;
+  padding: 300px;
+}
+
+.border {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  left: 50%;
+  right: 50%;
+  border: 2px solid aliceblue;
+  background-color: aliceblue;
+  border-radius: 50%;
+  box-shadow: 20px 20px #392F5A;
+}
+
+.border:hover {
+  color: aliceblue;
+  text-shadow: 2px 2px rgb(76, 117, 110);
+  border: 2px solid #392F5A;
+  background-color: #392F5A;
+  box-shadow: 20px 20px aliceblue;
+}
+
+.mission {
+  background-color: #392F5A;
+  padding: 75px;
+  border: 2px #392F5A;
+  margin: 30px;
+}
+
+.statement-bubble {
+  background-color: aliceblue;
+  color: #392F5A;
+  padding: 30px;
+  border: 2px #392F5A;
+  text-shadow: 2px 2px #AEF3E7;
+  border-radius: 40px;
+  font-size: 80px;
+}
+
+.statement-bubble:hover{
+  
+}
+.mission-description-text {
+  color: white;
+  font-family: "Helvetica";
+  font-size: 50px;
+}
+
+.connect {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Trebuchet MS, Helvetica, Sans-Serif';
+}
+
+.oneline {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.icons {
+  height: 70px;
+  width: 90px;
+  object-fit: cover;
+  display: flex;
+  flex-direction:column;
+}
+
+.iconstwo {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  display: flex;
+  flex-direction:column;
+}
+
+.iconsthree {
+  height: 90px;
+  width: 90px;
+  object-fit: cover;
+  display: flex;
+  flex-direction:column;
+}
+
+.handle {
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Trebuchet MS, Helvetica, Sans-Serif';
+}
+
+.quoteB
+{
+   background-color: #56876D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.quoteB:hover {
+background-color: #392F5A; 
+color: white;
+}
+
+.quote-body
+{
+  background-color: bisque; 
+  height: 500px; 
+  margin: 5px;
+}
+.quote-text
+{
+  font-family: fantasy; 
+  font-size: 30px; 
+}
+
+.quote-heading {
+  color: #392F5A;
+  text-shadow: 1.5px 1.5px #56876D;
+  font-family: 'Helvetica';
+  font-size: 50px;
+}

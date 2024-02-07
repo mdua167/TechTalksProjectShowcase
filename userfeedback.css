@@ -1,0 +1,262 @@
+body {
+  text-align: center;
+  background-color:aliceblue;
+  font-size: 15px;
+  font-family: Georgia, serif;
+  position: right-center;
+}
+
+
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+  }
+
+header {
+  height: 100px;
+  background-color: rgb(141, 195, 243);
+  
+  /* background-color: #AC7F53;  */
+  /* background-color: #AEF3E7; JUST TRYING SMTH OUT I MADE IT BROWNISH FOR NOW cuz i thought the teel was looking a litle tacky but we can talk about it tomorrow  */
+  width: 100%;
+  z-index: 12;
+  position: fixed;
+}
+
+.logo{
+  width: 30%;
+  float: left;
+  line-height: 100px;
+}
+
+.logo a{
+  text-decoration: none;
+  font-size: 30px;
+  font-family: Helvetica;
+  color: #392F5A;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px #E4C1F9
+}
+
+.logo a:hover {
+text-shadow: 2px 2px #392F5A;
+color: #E4C1F9;
+}
+
+nav {
+ float:right;
+ line-height: 100px; 
+}
+nav a {
+  text-decoration: none;
+  font-family: Helvetica;
+  letter-spacing: 4px;
+  font-size: 20px;
+  margin: 10px;
+  color: #392F5A;
+  text-shadow: 2px 2px #E4C1F9;
+  padding: 20px;
+}
+
+.dropbtn {
+  font-size: 20px;
+  padding: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 4px;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: #AEF3E7;
+  background-color: #392F5A;
+  text-shadow: 2px 2px #E4C1F9;
+  }
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  }
+
+nav a:hover  {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  }
+
+.active {
+  color: #AEF3E7;
+  text-shadow: 2px 2px #E4C1F9;
+  background-color: #392F5A;
+  padding: 20px;
+}
+
+img {
+  width: 300px;
+  object-fit: cover;
+  background-size: cover
+}
+
+survey.JPEG {
+  background-image: ('./pictures/survey.jpeg');
+  background-attachment: fixed; 
+  background-position: top-center;
+  background-size: cover;
+  padding: 300px;
+}
+
+.header {
+  font-family: Helvetica;
+  text-align: center;
+  font-size: 30px;
+  color: #392F5A;
+  text-shadow: 2px 2px #E4C1F9
+}
+
+.border {
+  border: 2px solid aliceblue;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+
+.main {
+  /* background-color: #E4C1F9 */
+}
+
+html {
+  scroll-behavior: smooth;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: black;
+ } 
+ 
+ #down {
+  margin-top: 100%;
+  padding-bottom: 25%;
+ } 
+
+.heading
+{
+  font-size: 50px; 
+  font-family: Helvetica;
+}
+
+
+.overlay {
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.overlay a {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlayz:hover .square {
+  opacity: 0.3;
+}
+
+.overlayz:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 30px;
+  font-weight: bold;
+} 
+
+.inline {
+  display: flex;
+  flex-direction: row;
+}
+
+.marginz {
+  margin: 10px
+}
+
+head1 {
+font-family: Helvetica
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #D2C9F8;
+  padding: 10px;
+  margin: 10px; 
+  border-color: black; 
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
